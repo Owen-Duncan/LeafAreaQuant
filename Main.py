@@ -13,7 +13,7 @@ def get_date_taken(path):
 #enter in the directory of your images in the line below
 os.chdir('D:/mgickdemo/images')
 cwd = os.getcwd()
-
+#unfortunately you have to use jpg for the exif data to come through. yes, this is dumb.
 files = glob.glob('*.jpg')
 
 for i in range(len(files)):
